@@ -16,6 +16,7 @@
 		18017C8C2CDF77A800D40E09 /* NewsReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18017C8B2CDF77A800D40E09 /* NewsReaderTests.swift */; };
 		18017C962CDF77A800D40E09 /* NewsReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18017C952CDF77A800D40E09 /* NewsReaderUITests.swift */; };
 		18017C982CDF77A800D40E09 /* NewsReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18017C972CDF77A800D40E09 /* NewsReaderUITestsLaunchTests.swift */; };
+		18017CA62CDF793D00D40E09 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 18017CA52CDF793D00D40E09 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18017CA62CDF793D00D40E09 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = NewsReader;
+			packageProductDependencies = (
+				18017CA52CDF793D00D40E09 /* Alamofire */,
+			);
 			productName = NewsReader;
 			productReference = 18017C722CDF77A400D40E09 /* NewsReader.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 18017C692CDF77A400D40E09;
+			packageReferences = (
+				18017CA42CDF793D00D40E09 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 18017C732CDF77A400D40E09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18017CA42CDF793D00D40E09 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18017CA52CDF793D00D40E09 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18017CA42CDF793D00D40E09 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		18017C802CDF77A700D40E09 /* NewsReader.xcdatamodeld */ = {
